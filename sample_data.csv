@@ -1,1 +1,6 @@
-
+Date,Description,Amount,Type
+2024-06-01,Salary,50000,Income
+2024-06-02,Groceries,-4000,Expense
+2024-06-03,Electricity Bill,-2000,Expense
+2024-06-05,Online Course,-2500,Expense
+2024-06-10,Freelance,8000,Income
