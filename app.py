@@ -7,7 +7,11 @@ from genai_advisor import get_budget_advice
 st.title("💸 AI-Powered Financial Planner")
 
 uploaded_file = st.file_uploader("Upload your transaction data (CSV)", type="csv")
-api_key = st.text_input("Enter your OpenAI API Key (optional for advice)", type="password")
+
+# Securely load OpenAI API key
+api_key = st.secrets["openai"]["api_key"] if "openai" in st.secrets else ""
+if not api_key:
+    api_key = st.text_input("Enter your OpenAI API Key (optional for advice)", type="password")
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
@@ -32,6 +36,5 @@ if uploaded_file:
         st.write(advice)
 
     st.bar_chart(df.groupby('Category')['Expense'].sum())
-
 else:
     st.warning("Please upload a CSV file to continue.")
