@@ -18,9 +18,4 @@ An interactive web app built with Streamlit that helps users forecast savings, c
 
 ## 📊 Sample Screenshot
 
-![screenshot](https://github.com/your-username/ai-financial-planner/blob/main/screenshots/demo.png)  
-*(Optional: Add a screenshot or GIF demo)*
-
----
-
-## 📂 Project Structure
+![image](https://github.com/user-attachments/assets/853dd7cf-ea72-4171-a9df-d1935215a4ed)
