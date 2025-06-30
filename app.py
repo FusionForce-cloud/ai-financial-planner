@@ -70,10 +70,12 @@ if 'df' in locals():
     st.metric("Predicted Savings", f"₹{predicted_savings:.2f}")
 
     if api_key:
-        advice = get_budget_advice(income, expense, goal, api_key)
-        st.subheader("💬 AI Budget Advice")
-        st.write(advice)
-
+        try:
+            advice = get_budget_advice(income, expense, goal, api_key)
+            st.subheader("💬 AI Budget Advice")
+            st.write(advice)
+        except Exception as e:
+            st.error("⚠️ Could not get advice. Try again later or check your OpenAI usage.")
     st.bar_chart(df.groupby('Category')['Expense'].sum())
 else:
     st.info("Please upload a CSV file or enter at least one transaction to begin.")
