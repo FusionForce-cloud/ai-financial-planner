@@ -2,7 +2,7 @@
 
 An interactive web app built with Streamlit that helps users forecast savings, categorize expenses, and receive personalized budget advice using Machine Learning and Generative AI.
 
-🔗 Live Demo: [https://ai-financial-planner.streamlit.app](https://ai-financial-planner-riscc63pdg8mzz9ejvutaz.streamlit.app/) *(replace with your link)*
+🔗 Live Demo: [https://ai-financial-planner.streamlit.app](https://ai-financial-planner-riscc63pdg8mzz9ejvutaz.streamlit.app/)
 
 ---
 
